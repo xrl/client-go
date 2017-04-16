@@ -221,6 +221,14 @@ const (
 	NamespaceDefault string = "default"
 	// NamespaceAll is the default argument to specify on a context when you want to list or filter resources across all namespaces
 	NamespaceAll string = ""
+	// NamespaceNone is the argument for a context when there is no namespace.
+	NamespaceNone string = ""
+	// NamespaceSystem is the system namespace where we place system components.
+	NamespaceSystem string = "kube-system"
+	// NamespacePublic is the namespace where we place public info (ConfigMaps)
+	NamespacePublic string = "kube-public"
+	// TerminationMessagePathDefault means the default path to capture the application termination message running in a container
+	TerminationMessagePathDefault string = "/dev/termination-log"
 )
 
 // Volume represents a named volume in a pod that may be accessed by any container in the pod.
